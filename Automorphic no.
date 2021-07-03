@@ -1,0 +1,19 @@
+import java.util.*;
+class Automorphic
+{
+ public static void main(String args[])
+ {
+  int n,m;
+  Scanner sc=new Scanner(System.in);
+  System.out.println("enter");
+  n=sc.nextInt();
+  if(n!=0)
+  {
+   m=(n*n)%100;
+   if(m==n)
+     System.out.println("given no.is an Automorphic");
+   else
+     System.out.println("given no.is not an Automorphic");
+  }
+ }
+}

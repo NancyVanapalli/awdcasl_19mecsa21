@@ -14,7 +14,7 @@ class Updated_LinkedList
   int key=sc.nextInt();
   if(a.contains(key))
   {
-    a.delete(a.indexOf(key));
+    a.remove(a.indexOf(key));
     System.out.println("updated list:"+a);
   }
   else

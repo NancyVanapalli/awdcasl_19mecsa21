@@ -1,0 +1,26 @@
+import java.util.*;
+class Updated_ArrayList
+{
+ public static void main(String args[])
+ {
+  Scanner sc=new Scanner(System.in);
+  ArrayList<Integer>a=new ArrayList<Integer>();
+  System.out.println("enter array size:");
+  int n=sc.nextInt();
+  System.out.println("enter array elements:");
+  for(int i=0;i<n;i++)
+  a.add(sc.nextInt());
+  System.out.println("enter the key & value u want 2 search nd replace in the list:");
+  int key=sc.nextInt();
+  int x=sc.nextInt();
+  if(a.contains(key))
+  {
+   a.set(a.indexOf(key),x);
+   System.out.println("updated list:"+a);
+  }
+  else
+  {
+   System.out.println("False");
+  }
+ }
+}

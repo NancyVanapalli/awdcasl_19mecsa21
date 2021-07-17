@@ -1,0 +1,23 @@
+import java.util.*;
+class Updated_LinkedList
+{
+ public static void main(String args[])
+ {
+  Scanner sc=new Scanner(System.in);
+  LinkedList<Integer>a=new LinkedList<Integer>();
+  System.out.println("enter array size:");
+  int n=sc.nextInt();
+  System.out.println("enter array elements:");
+  for(int i=0;i<n;i++)
+  a.addLast(sc.nextInt());
+  System.out.println("enter the key & value u want 2 search nd delete in the list:");
+  int key=sc.nextInt();
+  if(a.contains(key))
+  {
+    a.delete(a.indexOf(key));
+    System.out.println("updated list:"+a);
+  }
+  else
+    System.out.println("not found");
+ }
+}

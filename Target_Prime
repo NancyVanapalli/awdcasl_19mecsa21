@@ -1,0 +1,29 @@
+import java.util.*;
+class Target
+{
+  public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the n value");
+      int count=0;
+      int n=sc.nextInt();
+      System.out.println("enter the prime no.s");
+      int a[]=new int[n];
+      for(int i=0;i<n;i++)
+       a[]=sc.nextInt();
+      System.out.println("enter the TARGET value");
+      int t=sc.nextInt();
+      for(int k=n-1;k>=0;k--)
+        {
+           for(int j=0;j<=k;j++)
+            { 
+              if(a[k]-a[j]==t)
+               count++;
+             }
+         }
+if(count>0)
+   System.out.println("YES");
+            else
+System.out.println("No");
+      }
+}

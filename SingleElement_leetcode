@@ -1,0 +1,33 @@
+import java.util.*;
+class SingleElement
+{
+    public int singleNumber(int[] nums) 
+    {
+       int count,single=0;
+        for(int i=0;i<nums.length;i++)
+        {
+            count=0;
+            for(int j=0;j<nums.length;j++)
+            {
+                if(nums[i]==nums[j])
+                    count++;
+            }
+            if(count==1)
+             single=nums[i];
+        }
+        return single;
+    }
+}
+class NotRepeated
+{
+    public static void main(String[] args) 
+    {
+        Solution s=new Solution();
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        a[i]=sc.nextInt();
+        System.out.println(s.singleNumber(a)); 
+    }
+}
